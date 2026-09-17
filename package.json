@@ -1,0 +1,25 @@
+{
+  "name": "dracin-stream",
+  "version": "1.0.0",
+  "description": "Aplikasi streaming drama China dengan Syln SDK",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env.local server.js",
+    "start": "node --env-file-if-exists=.env.local server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "dracin",
+    "streaming",
+    "syln"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@syln/sdk": "file:syln-sdk-0.1.0.tgz"
+  }
+}

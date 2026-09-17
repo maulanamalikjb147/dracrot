@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#100f12" />
+    <meta name="description" content="Temukan dan tonton drama China favoritmu." />
+    <title>Ruang Dracin — Nonton drama favoritmu</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ruang Dracin beranda">
+        <span class="brand-mark">R</span>
+        <span>RUANG <b>DRACIN</b></span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a class="active" href="#jelajah">Jelajah</a>
+        <a href="#terbaru">Terbaru</a>
+        <a href="#tentang">Tentang</a>
+      </nav>
+      <button class="icon-button" id="mobileSearchButton" type="button" aria-label="Buka pencarian">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" /></svg>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Drama pilihan, cerita tanpa batas</p>
+          <h1 id="heroTitle">Malam ini,<br /><em>cerita apa?</em></h1>
+          <p class="hero-description">Dari romansa yang bikin senyum sampai intrik kerajaan yang menegangkan—semua ada di satu ruang.</p>
+          <form class="hero-search" id="searchForm" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z" /></svg>
+            <label class="sr-only" for="searchInput">Cari judul drama</label>
+            <input id="searchInput" name="q" type="search" minlength="2" maxlength="100" placeholder="Cari judul drama..." autocomplete="off" />
+            <button type="submit">Cari</button>
+          </form>
+          <div class="hero-meta" aria-label="Keunggulan">
+            <span><i>✓</i> Subtitle tersedia</span>
+            <span><i>✓</i> Kualitas adaptif</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="moon"></div>
+          <div class="fan fan-back"></div>
+          <div class="fan fan-front"><span>剧</span></div>
+          <span class="petal petal-one"></span>
+          <span class="petal petal-two"></span>
+          <span class="petal petal-three"></span>
+          <span class="petal petal-four"></span>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="jelajah" aria-labelledby="catalogTitle">
+        <div class="section-heading">
+          <div>
+            <p class="kicker" id="catalogKicker">Pilihan untukmu</p>
+            <h2 id="catalogTitle">Sedang hangat</h2>
+          </div>
+          <button class="text-button hidden" id="clearSearch" type="button">Lihat semua <span>→</span></button>
+        </div>
+
+        <div class="filter-bar" id="terbaru">
+          <div class="filter-pills" id="platformFilters" aria-label="Filter platform">
+            <button class="pill active" data-platform="" type="button">Semua</button>
+          </div>
+          <div class="select-wrap">
+            <label class="sr-only" for="languageFilter">Bahasa</label>
+            <select id="languageFilter"><option value="">Semua bahasa</option></select>
+          </div>
+        </div>
+
+        <div class="status-card hidden" id="statusCard" role="status"></div>
+        <div class="catalog-grid" id="catalogGrid" aria-live="polite"></div>
+        <div class="pagination" id="pagination">
+          <button id="previousPage" type="button">← Sebelumnya</button>
+          <span id="pageLabel">Halaman 1</span>
+          <button id="nextPage" type="button">Berikutnya →</button>
+        </div>
+      </section>
+
+      <section class="about-section" id="tentang">
+        <p class="kicker">Dibuat untuk penikmat cerita</p>
+        <h2>Satu ruang. Ribuan kisah.</h2>
+        <p>Katalog diperbarui dari Syln dan tautan tayangan diminta hanya saat kamu menekan tombol putar.</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand compact" href="#top"><span class="brand-mark">R</span><span>RUANG <b>DRACIN</b></span></a>
+      <p>Tempat pulang para pencinta drama.</p>
+      <p>Didukung oleh Syln API</p>
+    </footer>
+
+    <dialog class="detail-dialog" id="detailDialog">
+      <button class="dialog-close" data-close="detail" type="button" aria-label="Tutup">×</button>
+      <div id="detailContent"></div>
+    </dialog>
+
+    <dialog class="player-dialog" id="playerDialog">
+      <div class="player-shell">
+        <div class="player-topbar">
+          <div>
+            <p id="playerEpisode">Episode</p>
+            <h2 id="playerTitle">Memuat...</h2>
+          </div>
+          <button class="dialog-close static" data-close="player" type="button" aria-label="Tutup pemutar">×</button>
+        </div>
+        <div class="video-wrap">
+          <video id="videoPlayer" controls playsinline preload="metadata"></video>
+          <div class="player-loading hidden" id="playerLoading"><span></span><p>Menyiapkan tayangan...</p></div>
+        </div>
+        <div class="player-footer">
+          <p id="playerInfo">URL tayangan dibuat sesaat sebelum video diputar.</p>
+          <select id="qualitySelect" aria-label="Kualitas video"></select>
+        </div>
+      </div>
+    </dialog>
+
+    <template id="skeletonTemplate">
+      <article class="drama-card skeleton-card" aria-hidden="true">
+        <div class="poster skeleton"></div><div class="skeleton-line skeleton"></div><div class="skeleton-line short skeleton"></div>
+      </article>
+    </template>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
+
