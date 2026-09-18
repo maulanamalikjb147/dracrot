@@ -1,35 +1,41 @@
-# Graph Report - syln-test  (2026-09-17)
+# Graph Report - syln-test  (2026-09-19)
 
 ## Corpus Check
-- 2 files · ~3,068 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
-- 77 nodes · 113 edges · 8 communities
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.86)
+- 107 nodes · 172 edges · 10 communities (9 shown, 1 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
+## Graph Freshness
+- Built from commit: `39410d24`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
 ## Community Hubs (Navigation)
-- Package Configuration
-- Secure API Server
-- Server Test Harness
-- Product Security Concepts
-- Playback Lifecycle
-- Title Detail UI
-- Catalog Rendering
-- API Data Loading
+- server.js
+- package.json
+- server.test.js
+- app.js
+- favorites.js
+- Ruang Dracin Page
+- toggleFavorite
+- loadCatalog
+- wireDetailActions
+- persistFavorites
 
 ## God Nodes (most connected - your core abstractions)
-1. `createHandler()` - 11 edges
-2. `MockResponse` - 7 edges
-3. `api()` - 6 edges
-4. `loadCatalog()` - 6 edges
-5. `openDetails()` - 6 edges
-6. `escapeHtml()` - 5 edges
-7. `invoke()` - 4 edges
-8. `scripts` - 4 edges
-9. `@syln/sdk` - 4 edges
-10. `Ruang Dracin Page` - 4 edges
+1. `createHandler()` - 13 edges
+2. `toggleFavorite()` - 9 edges
+3. `MockResponse` - 7 edges
+4. `detailsMarkup()` - 7 edges
+5. `titleCard()` - 7 edges
+6. `api()` - 6 edges
+7. `removeFavorite()` - 6 edges
+8. `isFavorite()` - 6 edges
+9. `openDetails()` - 6 edges
+10. `loadCatalog()` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Syln API` --semantically_similar_to--> `@syln/sdk`  [INFERRED] [semantically similar]
@@ -46,52 +52,57 @@
 ## Import Cycles
 - None detected.
 
-## Communities (8 total, 0 thin omitted)
+## Communities (10 total, 1 thin omitted)
 
-### Community 0 - "Package Configuration"
+### Community 0 - "server.js"
+Cohesion: 0.13
+Nodes (22): contentDisposition(), createHandler(), createServer(), fs, http, MIME_TYPES, os, parseBoolean() (+14 more)
+
+### Community 1 - "package.json"
 Cohesion: 0.12
 Nodes (16): author, dependencies, @syln/sdk, description, engines, node, keywords, license (+8 more)
 
-### Community 1 - "Secure API Server"
-Cohesion: 0.20
-Nodes (15): createHandler(), createServer(), fs, http, MIME_TYPES, parsePositiveInteger(), path, PUBLIC_DIR (+7 more)
+### Community 2 - "server.test.js"
+Cohesion: 0.16
+Nodes (10): assert, { createHandler }, fs, invoke(), mockClient(), MockResponse, mockTitle, { Readable, Writable } (+2 more)
 
-### Community 2 - "Server Test Harness"
-Cohesion: 0.17
-Nodes (9): assert, { createHandler }, invoke(), mockClient(), MockResponse, mockTitle, { Readable, Writable }, response() (+1 more)
+### Community 3 - "app.js"
+Cohesion: 0.19
+Nodes (12): api(), configureQuality(), durationLabel(), elements, enableDefaultSubtitle(), favoriteSnapshot(), loadLanguages(), loadPlatforms() (+4 more)
 
-### Community 3 - "Product Security Concepts"
+### Community 4 - "favorites.js"
+Cohesion: 0.44
+Nodes (8): elements, escapeHtml(), favoriteCard(), favoriteKey(), loadFavorites(), removeFavorite(), render(), showToast()
+
+### Community 5 - "Ruang Dracin Page"
 Cohesion: 0.31
 Nodes (9): Catalog Discovery Interface, Ruang Dracin Page, Syln API, Adaptive Video Playback Interface, Drama Catalog and Playback Features, Ruang Dracin Web Application, Web Application Security Hardening, Server-Side Token Isolation (+1 more)
 
-### Community 4 - "Playback Lifecycle"
-Cohesion: 0.36
-Nodes (6): configureQuality(), elements, openPlayer(), requestPlayback(), setPlayerLoading(), state
+### Community 6 - "toggleFavorite"
+Cohesion: 0.57
+Nodes (8): detailsMarkup(), escapeHtml(), favoriteButtonText(), favoriteKey(), isFavorite(), openDetails(), titleCard(), toggleFavorite()
 
-### Community 5 - "Title Detail UI"
-Cohesion: 0.60
-Nodes (5): detailsMarkup(), durationLabel(), escapeHtml(), openDetails(), titleCard()
-
-### Community 6 - "Catalog Rendering"
+### Community 7 - "loadCatalog"
 Cohesion: 0.50
 Nodes (4): loadCatalog(), renderSkeletons(), showStatus(), updatePagination()
 
-### Community 7 - "API Data Loading"
+### Community 8 - "wireDetailActions"
 Cohesion: 0.67
-Nodes (3): api(), loadLanguages(), loadPlatforms()
+Nodes (3): downloadEpisode(), showToast(), wireDetailActions()
 
 ## Knowledge Gaps
-- **26 isolated node(s):** `author`, `@syln/sdk`, `description`, `node`, `keywords` (+21 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 31 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **33 isolated node(s):** `fs`, `http`, `MIME_TYPES`, `os`, `path` (+28 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 40 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `@syln/sdk` connect `Product Security Concepts` to `Package Configuration`, `Secure API Server`?**
-  _High betweenness centrality (0.320) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `loadCatalog()` (e.g. with `app.js` and `showStatus()`) actually correct?**
-  _`loadCatalog()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `author`, `@syln/sdk`, `description` to the rest of the system?**
-  _26 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Package Configuration` be split into smaller, more focused modules?**
+- **Why does `@syln/sdk` connect `Ruang Dracin Page` to `server.js`, `package.json`?**
+  _High betweenness centrality (0.204) - this node is a cross-community bridge._
+- **What connects `fs`, `http`, `MIME_TYPES` to the rest of the system?**
+  _33 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `server.js` be split into smaller, more focused modules?**
+  _Cohesion score 0.12681159420289856 - nodes in this community are weakly interconnected._
+- **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

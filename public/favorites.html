@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" />
+    <meta name="description" content="Daftar film dan drama favorit di Dracrot." />
+    <title>Daftar Saya — Dracrot</title>
+    <link rel="stylesheet" href="/styles.css?v=2" />
+  </head>
+  <body>
+    <header class="site-header solid-header">
+      <a class="brand" href="/" aria-label="Dracrot beranda">DRACROT</a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="/">Beranda</a>
+        <a href="/#jelajah">Jelajah</a>
+        <a class="active" href="/favorites.html">Daftar Saya <span class="nav-count" id="favoriteCount">0</span></a>
+      </nav>
+    </header>
+
+    <main class="favorites-page">
+      <section class="favorites-page-hero">
+        <p class="kicker">Koleksi pribadi</p>
+        <h1>Daftar Saya</h1>
+        <p>Semua cerita yang kamu simpan, dikumpulkan dalam satu halaman.</p>
+      </section>
+
+      <section class="favorites-library" aria-labelledby="libraryTitle">
+        <div class="section-heading">
+          <div><p class="kicker">Tersimpan di perangkat ini</p><h2 id="libraryTitle">Favoritmu</h2></div>
+          <span class="section-note" id="favoritesNote"></span>
+        </div>
+        <div class="catalog-grid" id="favoritesGrid"></div>
+        <div class="empty-list hidden" id="favoritesEmpty">
+          <span class="empty-icon" aria-hidden="true">＋</span>
+          <h2>Daftar kamu masih kosong</h2>
+          <p>Tambahkan judul dari katalog agar mudah ditemukan lagi.</p>
+          <a class="primary-link" href="/#jelajah">Jelajahi katalog</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+    <script src="/favorites.js?v=2" defer></script>
+  </body>
+</html>

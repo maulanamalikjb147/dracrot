@@ -1,7 +1,7 @@
 {
-  "name": "dracin-stream",
+  "name": "dracrot",
   "version": "1.0.0",
-  "description": "Aplikasi streaming drama China dengan Syln SDK",
+  "description": "Dracrot — aplikasi streaming drama dengan Syln SDK",
   "main": "server.js",
   "scripts": {
     "dev": "node --watch --env-file-if-exists=.env.local server.js",

@@ -1,6 +1,10 @@
 const http = require("node:http");
 const fs = require("node:fs");
+const os = require("node:os");
 const path = require("node:path");
+const { spawn } = require("node:child_process");
+const { Readable } = require("node:stream");
+const { pipeline } = require("node:stream/promises");
 const { Syln, SylnError } = require("@syln/sdk");
 
 const PUBLIC_DIR = path.join(__dirname, "public");
@@ -69,6 +73,14 @@ function parsePositiveInteger(value, fallback, max = 10000) {
   return Number.isInteger(parsed) && parsed > 0 && parsed <= max ? parsed : null;
 }
 
+function parseBoolean(value, fallback = true) {
+  if (value === undefined || value === null || value === "") return fallback;
+  const normalized = String(value).trim().toLowerCase();
+  if (["1", "true", "yes", "on"].includes(normalized)) return true;
+  if (["0", "false", "no", "off"].includes(normalized)) return false;
+  return fallback;
+}
+
 function requireTitleId(value) {
   if (!value || !/^[a-z0-9_-]+:[a-zA-Z0-9_-]+$/.test(value)) {
     const error = new Error("ID judul tidak valid.");
@@ -76,6 +88,51 @@ function requireTitleId(value) {
     throw error;
   }
   return value;
+}
+
+function safeDownloadName(value, episode) {
+  const cleanTitle = String(value || "Dracrot")
+    .normalize("NFKC")
+    .replace(/[\u0000-\u001f\u007f<>:"/\\|?*]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 120) || "Dracrot";
+  return `${cleanTitle} - Episode ${String(episode).padStart(2, "0")}.mp4`;
+}
+
+function contentDisposition(filename) {
+  const fallback = filename.replace(/[^\x20-\x7e]/g, "_").replace(/["\\]/g, "_");
+  return `attachment; filename="${fallback}"; filename*=UTF-8''${encodeURIComponent(filename)}`;
+}
+
+function remuxMp4(sourcePath, outputPath) {
+  return new Promise((resolve, reject) => {
+    const process = spawn("ffmpeg", [
+      "-hide_banner", "-loglevel", "error", "-y",
+      "-i", sourcePath,
+      "-map", "0",
+      "-c", "copy",
+      "-movflags", "+faststart",
+      outputPath,
+    ], { stdio: ["ignore", "ignore", "pipe"] });
+    let errorOutput = "";
+    process.stderr.on("data", (chunk) => {
+      if (errorOutput.length < 8192) errorOutput += chunk.toString("utf8");
+    });
+    process.once("error", (error) => {
+      error.statusCode = 500;
+      error.message = error.code === "ENOENT"
+        ? "FFmpeg belum tersedia di server untuk menyiapkan MP4 kompatibel."
+        : "Video gagal dinormalisasi.";
+      reject(error);
+    });
+    process.once("close", (code) => {
+      if (code === 0) return resolve();
+      const error = new Error(`Video gagal dinormalisasi.${errorOutput ? ` ${errorOutput.trim()}` : ""}`);
+      error.statusCode = 502;
+      reject(error);
+    });
+  });
 }
 
 async function readJson(request) {
@@ -117,7 +174,7 @@ function queryCatalogParams(searchParams) {
   return params;
 }
 
-function createHandler(client) {
+function createHandler(client, mediaFetch = globalThis.fetch, videoRemuxer = remuxMp4, quickTimeCompat = true) {
   return async function handler(request, response) {
     setSecurityHeaders(response);
     const url = new URL(request.url, "http://localhost");
@@ -162,6 +219,87 @@ function createHandler(client) {
             return sendJson(response, 400, { success: false, error: "Episode atau resolusi tidak valid." });
           }
           result = await client.play(id, ep, { res, lang: body.lang || undefined });
+        } else if (request.method === "GET" && url.pathname === "/api/download") {
+          const id = requireTitleId(url.searchParams.get("id"));
+          const ep = parsePositiveInteger(url.searchParams.get("ep"), null, 100000);
+          const rawRes = url.searchParams.get("res");
+          const res = rawRes ? parsePositiveInteger(rawRes, null, 4320) : undefined;
+          if (ep === null || (rawRes && (res === null || res < 144))) {
+            return sendJson(response, 400, { success: false, error: "Episode atau resolusi tidak valid." });
+          }
+
+          const playback = await client.play(id, ep, {
+            res,
+            lang: url.searchParams.get("lang") || undefined,
+          });
+          const signedUrl = new URL(playback.data.url);
+          if (signedUrl.protocol !== "https:" || signedUrl.hostname !== "cdn.syln.dev") {
+            throw new Error("URL media tidak valid.");
+          }
+
+          const upstream = await mediaFetch(signedUrl, { redirect: "error" });
+          if (!upstream.ok || !upstream.body) {
+            const error = new Error("Video gagal diunduh dari penyedia media.");
+            error.statusCode = upstream.status >= 400 && upstream.status < 500 ? upstream.status : 502;
+            throw error;
+          }
+
+          const filename = safeDownloadName(url.searchParams.get("title"), ep);
+          const downloadHeaders = {
+            "Content-Type": "video/mp4",
+            "Content-Disposition": contentDisposition(filename),
+            "Cache-Control": "no-store",
+            "X-Dracrot-Resolution": String(playback.data.resolution || res || "unknown"),
+          };
+
+          if (!quickTimeCompat) {
+            const contentLength = upstream.headers.get("content-length");
+            response.writeHead(200, {
+              ...downloadHeaders,
+              ...(contentLength ? { "Content-Length": contentLength } : {}),
+              "X-Dracrot-Container": "original",
+            });
+            const mediaStream = Readable.fromWeb(upstream.body);
+            mediaStream.once("error", (error) => response.destroy(error));
+            return mediaStream.pipe(response);
+          }
+
+          const tempDir = await fs.promises.mkdtemp(path.join(os.tmpdir(), "dracrot-download-"));
+          const sourcePath = path.join(tempDir, "source.mp4");
+          const outputPath = path.join(tempDir, "ready.mp4");
+          try {
+            await pipeline(Readable.fromWeb(upstream.body), fs.createWriteStream(sourcePath));
+            await videoRemuxer(sourcePath, outputPath);
+            if (response.destroyed) {
+              await fs.promises.rm(tempDir, { recursive: true, force: true });
+              return;
+            }
+
+            const stat = await fs.promises.stat(outputPath);
+            response.writeHead(200, {
+              ...downloadHeaders,
+              "Content-Length": stat.size,
+              "X-Dracrot-Container": "standard-mp4",
+            });
+
+            let cleaned = false;
+            const cleanup = () => {
+              if (cleaned) return;
+              cleaned = true;
+              fs.promises.rm(tempDir, { recursive: true, force: true }).catch(console.error);
+            };
+            response.once("finish", cleanup);
+            response.once("close", cleanup);
+            const fileStream = fs.createReadStream(outputPath);
+            fileStream.once("error", (error) => {
+              cleanup();
+              response.destroy(error);
+            });
+            return fileStream.pipe(response);
+          } catch (error) {
+            await fs.promises.rm(tempDir, { recursive: true, force: true });
+            throw error;
+          }
         } else {
           return sendJson(response, 404, { success: false, error: "Endpoint tidak ditemukan." });
         }
@@ -222,16 +360,18 @@ function createHandler(client) {
   };
 }
 
-function createServer({ client } = {}) {
+function createServer({ client, mediaFetch, videoRemuxer, quickTimeCompat } = {}) {
   const token = process.env.SYLN_TOKEN?.trim();
   const syln = client || (token ? new Syln({ token, timeoutMs: 15000 }) : null);
-  return http.createServer(createHandler(syln));
+  const normalizeDownloads = quickTimeCompat ?? parseBoolean(process.env.DOWNLOAD_QUICKTIME_COMPAT, true);
+  return http.createServer(createHandler(syln, mediaFetch, videoRemuxer, normalizeDownloads));
 }
 
 if (require.main === module) {
   const port = parsePositiveInteger(process.env.PORT, 3000, 65535) || 3000;
   createServer().listen(port, () => {
-    console.log(`Dracin siap di http://localhost:${port}`);
+    console.log(`Dracrot siap di http://localhost:${port}`);
+    console.log(`Kompatibilitas unduhan QuickTime: ${parseBoolean(process.env.DOWNLOAD_QUICKTIME_COMPAT, true) ? "aktif" : "nonaktif"}`);
     if (!process.env.SYLN_TOKEN) console.warn("SYLN_TOKEN belum diisi. Katalog belum dapat dimuat.");
   });
 }

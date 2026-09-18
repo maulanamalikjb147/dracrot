@@ -1,5 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
 const { Readable, Writable } = require("node:stream");
 const { createHandler } = require("../server");
 
@@ -59,7 +60,7 @@ class MockResponse extends Writable {
   }
 }
 
-async function invoke({ method = "GET", url = "/", body } = {}) {
+async function invoke({ method = "GET", url = "/", body, mediaFetch, videoRemuxer, quickTimeCompat = true } = {}) {
   const request = Readable.from(body === undefined ? [] : [Buffer.from(JSON.stringify(body))]);
   request.method = method;
   request.url = url;
@@ -68,7 +69,7 @@ async function invoke({ method = "GET", url = "/", body } = {}) {
     response.once("finish", resolve);
     response.once("error", reject);
   });
-  await createHandler(mockClient())(request, response);
+  await createHandler(mockClient(), mediaFetch, videoRemuxer, quickTimeCompat)(request, response);
   await finished;
   return {
     status: response.statusCode,
@@ -81,7 +82,14 @@ test("serves the streaming interface with security headers", async () => {
   const result = await invoke();
   assert.equal(result.status, 200);
   assert.match(result.headers.get("content-security-policy"), /cdn\.syln\.dev/);
-  assert.match(result.text, /RUANG <b>DRACIN<\/b>/);
+  assert.match(result.text, /DRACROT/);
+});
+
+test("serves Daftar Saya as a separate page", async () => {
+  const result = await invoke({ url: "/favorites.html" });
+  assert.equal(result.status, 200);
+  assert.match(result.text, /Daftar Saya/);
+  assert.match(result.text, /favorites\.js/);
 });
 
 test("proxies catalog data without exposing credentials", async () => {
@@ -98,4 +106,47 @@ test("validates search and playback inputs", async () => {
 
   const play = await invoke({ method: "POST", url: "/api/play", body: { id: "not-valid", ep: 1 } });
   assert.equal(play.status, 400);
+});
+
+test("downloads one episode with a safe, readable filename", async () => {
+  const mediaFetch = async (url) => {
+    assert.equal(url.hostname, "cdn.syln.dev");
+    return new Response(Buffer.from("video-bytes"), {
+      status: 200,
+      headers: { "Content-Type": "video/mp4", "Content-Length": "11" },
+    });
+  };
+  const videoRemuxer = (sourcePath, outputPath) => fs.promises.copyFile(sourcePath, outputPath);
+  const title = encodeURIComponent("Kisah: Contoh/Bagus");
+  const result = await invoke({
+    url: `/api/download?id=flextv:12418&ep=1&res=720&lang=id&title=${title}`,
+    mediaFetch,
+    videoRemuxer,
+  });
+
+  assert.equal(result.status, 200);
+  assert.equal(result.headers.get("content-type"), "video/mp4");
+  assert.equal(result.headers.get("x-dracrot-container"), "standard-mp4");
+  assert.match(result.headers.get("content-disposition"), /Episode%2001\.mp4/);
+  assert.equal(result.text, "video-bytes");
+});
+
+test("can pass through the original download when QuickTime compatibility is disabled", async () => {
+  let remuxCalled = false;
+  const mediaFetch = async () => new Response(Buffer.from("original-video"), {
+    status: 200,
+    headers: { "Content-Type": "video/mp4", "Content-Length": "14" },
+  });
+  const result = await invoke({
+    url: "/api/download?id=flextv:12418&ep=1&res=720&title=Kisah",
+    mediaFetch,
+    videoRemuxer: async () => { remuxCalled = true; },
+    quickTimeCompat: false,
+  });
+
+  assert.equal(result.status, 200);
+  assert.equal(result.headers.get("x-dracrot-container"), "original");
+  assert.equal(result.headers.get("content-length"), "14");
+  assert.equal(result.text, "original-video");
+  assert.equal(remuxCalled, false);
 });

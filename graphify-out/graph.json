@@ -10,109 +10,167 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "mockresponse",
       "source_file": "test/server.test.js",
-      "source_location": "L34"
+      "source_location": "L35"
+    },
+    {
+      "id": "server_contentdisposition",
+      "label": "contentDisposition()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.js",
+      "file_type": "code",
+      "norm_label": "contentdisposition()",
+      "source_file": "server.js",
+      "source_location": "L103"
     },
     {
       "id": "server_createhandler",
       "label": "createHandler()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "createhandler()",
       "source_file": "server.js",
-      "source_location": "L120"
+      "source_location": "L177"
     },
     {
       "id": "server_createserver",
       "label": "createServer()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "createserver()",
       "source_file": "server.js",
-      "source_location": "L225"
+      "source_location": "L363"
+    },
+    {
+      "id": "server_parseboolean",
+      "label": "parseBoolean()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.js",
+      "file_type": "code",
+      "norm_label": "parseboolean()",
+      "source_file": "server.js",
+      "source_location": "L76"
     },
     {
       "id": "server_parsepositiveinteger",
       "label": "parsePositiveInteger()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "parsepositiveinteger()",
       "source_file": "server.js",
-      "source_location": "L64"
+      "source_location": "L68"
     },
     {
       "id": "server_publicerror",
       "label": "publicError()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "publicerror()",
       "source_file": "server.js",
-      "source_location": "L39"
+      "source_location": "L43"
     },
     {
       "id": "server_querycatalogparams",
       "label": "queryCatalogParams()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "querycatalogparams()",
       "source_file": "server.js",
-      "source_location": "L103"
+      "source_location": "L160"
     },
     {
       "id": "server_readjson",
       "label": "readJson()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "readjson()",
       "source_file": "server.js",
-      "source_location": "L81"
+      "source_location": "L138"
+    },
+    {
+      "id": "server_remuxmp4",
+      "label": "remuxMp4()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.js",
+      "file_type": "code",
+      "norm_label": "remuxmp4()",
+      "source_file": "server.js",
+      "source_location": "L108"
     },
     {
       "id": "server_requiretitleid",
       "label": "requireTitleId()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "requiretitleid()",
       "source_file": "server.js",
-      "source_location": "L72"
+      "source_location": "L84"
+    },
+    {
+      "id": "server_safedownloadname",
+      "label": "safeDownloadName()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.js",
+      "file_type": "code",
+      "norm_label": "safedownloadname()",
+      "source_file": "server.js",
+      "source_location": "L93"
     },
     {
       "id": "server_sendjson",
       "label": "sendJson()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "sendjson()",
       "source_file": "server.js",
-      "source_location": "L28"
+      "source_location": "L32"
     },
     {
       "id": "server_setsecurityheaders",
       "label": "setSecurityHeaders()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "setsecurityheaders()",
       "source_file": "server.js",
-      "source_location": "L18"
+      "source_location": "L22"
     },
     {
       "id": "test_server_test_invoke",
@@ -120,10 +178,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "invoke()",
       "source_file": "test/server.test.js",
-      "source_location": "L62"
+      "source_location": "L63"
     },
     {
       "id": "test_server_test_mockclient",
@@ -131,10 +190,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "mockclient()",
       "source_file": "test/server.test.js",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "test_server_test_mockresponse_constructor",
@@ -142,10 +202,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": ".constructor()",
       "source_file": "test/server.test.js",
-      "source_location": "L35"
+      "source_location": "L36"
     },
     {
       "id": "test_server_test_mockresponse_getheader",
@@ -153,10 +214,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": ".getheader()",
       "source_file": "test/server.test.js",
-      "source_location": "L51"
+      "source_location": "L52"
     },
     {
       "id": "test_server_test_mockresponse_setheader",
@@ -164,10 +226,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": ".setheader()",
       "source_file": "test/server.test.js",
-      "source_location": "L47"
+      "source_location": "L48"
     },
     {
       "id": "test_server_test_mockresponse_write",
@@ -175,10 +238,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "._write()",
       "source_file": "test/server.test.js",
-      "source_location": "L42"
+      "source_location": "L43"
     },
     {
       "id": "test_server_test_mockresponse_writehead",
@@ -186,10 +250,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": ".writehead()",
       "source_file": "test/server.test.js",
-      "source_location": "L55"
+      "source_location": "L56"
     },
     {
       "id": "test_server_test_response",
@@ -197,373 +262,438 @@
       "_callable": true,
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "response()",
       "source_file": "test/server.test.js",
-      "source_location": "L18"
-    },
-    {
-      "id": "public_app_closedialog",
-      "label": "closeDialog()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "file_type": "code",
-      "norm_label": "closedialog()",
-      "source_file": "public/app.js",
-      "source_location": "L300"
-    },
-    {
-      "id": "public_app_configurequality",
-      "label": "configureQuality()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "file_type": "code",
-      "norm_label": "configurequality()",
-      "source_file": "public/app.js",
-      "source_location": "L232"
-    },
-    {
-      "id": "public_app_openplayer",
-      "label": "openPlayer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "file_type": "code",
-      "norm_label": "openplayer()",
-      "source_file": "public/app.js",
-      "source_location": "L287"
-    },
-    {
-      "id": "public_app_requestplayback",
-      "label": "requestPlayback()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "file_type": "code",
-      "norm_label": "requestplayback()",
-      "source_file": "public/app.js",
-      "source_location": "L243"
-    },
-    {
-      "id": "public_app_setplayerloading",
-      "label": "setPlayerLoading()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "file_type": "code",
-      "norm_label": "setplayerloading()",
-      "source_file": "public/app.js",
-      "source_location": "L228"
-    },
-    {
-      "id": "public_app_detailsmarkup",
-      "label": "detailsMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "file_type": "code",
-      "norm_label": "detailsmarkup()",
-      "source_file": "public/app.js",
-      "source_location": "L175"
-    },
-    {
-      "id": "public_app_durationlabel",
-      "label": "durationLabel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "file_type": "code",
-      "norm_label": "durationlabel()",
-      "source_file": "public/app.js",
-      "source_location": "L60"
-    },
-    {
-      "id": "public_app_escapehtml",
-      "label": "escapeHtml()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "file_type": "code",
-      "norm_label": "escapehtml()",
-      "source_file": "public/app.js",
-      "source_location": "L40"
-    },
-    {
-      "id": "public_app_opendetails",
-      "label": "openDetails()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "file_type": "code",
-      "norm_label": "opendetails()",
-      "source_file": "public/app.js",
-      "source_location": "L204"
-    },
-    {
-      "id": "public_app_titlecard",
-      "label": "titleCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "file_type": "code",
-      "norm_label": "titlecard()",
-      "source_file": "public/app.js",
-      "source_location": "L84"
-    },
-    {
-      "id": "public_app_loadcatalog",
-      "label": "loadCatalog()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "loadcatalog()",
-      "source_file": "public/app.js",
-      "source_location": "L109"
-    },
-    {
-      "id": "public_app_renderskeletons",
-      "label": "renderSkeletons()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "renderskeletons()",
-      "source_file": "public/app.js",
-      "source_location": "L67"
-    },
-    {
-      "id": "public_app_showstatus",
-      "label": "showStatus()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "showstatus()",
-      "source_file": "public/app.js",
-      "source_location": "L76"
-    },
-    {
-      "id": "public_app_updatepagination",
-      "label": "updatePagination()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "updatepagination()",
-      "source_file": "public/app.js",
-      "source_location": "L102"
+      "source_location": "L19"
     },
     {
       "id": "public_app_api",
       "label": "api()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
       "norm_label": "api()",
       "source_file": "public/app.js",
-      "source_location": "L46"
+      "source_location": "L83"
+    },
+    {
+      "id": "public_app_closedialog",
+      "label": "closeDialog()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "app.js",
+      "file_type": "code",
+      "norm_label": "closedialog()",
+      "source_file": "public/app.js",
+      "source_location": "L336"
+    },
+    {
+      "id": "public_app_configurequality",
+      "label": "configureQuality()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "app.js",
+      "file_type": "code",
+      "norm_label": "configurequality()",
+      "source_file": "public/app.js",
+      "source_location": "L272"
+    },
+    {
+      "id": "public_app_durationlabel",
+      "label": "durationLabel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "app.js",
+      "file_type": "code",
+      "norm_label": "durationlabel()",
+      "source_file": "public/app.js",
+      "source_location": "L90"
+    },
+    {
+      "id": "public_app_enabledefaultsubtitle",
+      "label": "enableDefaultSubtitle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "app.js",
+      "file_type": "code",
+      "norm_label": "enabledefaultsubtitle()",
+      "source_file": "public/app.js",
+      "source_location": "L281"
+    },
+    {
+      "id": "public_app_favoritesnapshot",
+      "label": "favoriteSnapshot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "app.js",
+      "file_type": "code",
+      "norm_label": "favoritesnapshot()",
+      "source_file": "public/app.js",
+      "source_location": "L39"
     },
     {
       "id": "public_app_loadlanguages",
       "label": "loadLanguages()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
       "norm_label": "loadlanguages()",
       "source_file": "public/app.js",
-      "source_location": "L156"
+      "source_location": "L183"
     },
     {
       "id": "public_app_loadplatforms",
       "label": "loadPlatforms()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
       "norm_label": "loadplatforms()",
       "source_file": "public/app.js",
-      "source_location": "L140"
+      "source_location": "L172"
     },
     {
-      "id": "package",
-      "label": "package.json",
+      "id": "public_app_loadstoredfavorites",
+      "label": "loadStoredFavorites()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
-      "norm_label": "package.json",
-      "source_file": "package.json",
-      "source_location": "L1"
+      "norm_label": "loadstoredfavorites()",
+      "source_file": "public/app.js",
+      "source_location": "L30"
     },
     {
-      "id": "package_author",
-      "label": "author",
+      "id": "public_app_openplayer",
+      "label": "openPlayer()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
-      "norm_label": "author",
-      "source_file": "package.json",
-      "source_location": "L16"
+      "norm_label": "openplayer()",
+      "source_file": "public/app.js",
+      "source_location": "L326"
     },
     {
-      "id": "package_dependencies",
-      "label": "dependencies",
+      "id": "public_app_requestplayback",
+      "label": "requestPlayback()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
-      "norm_label": "dependencies",
-      "source_file": "package.json",
-      "source_location": "L22"
+      "norm_label": "requestplayback()",
+      "source_file": "public/app.js",
+      "source_location": "L292"
     },
     {
-      "id": "package_dependencies_syln_sdk",
-      "label": "@syln/sdk",
+      "id": "public_favorites_escapehtml",
+      "label": "escapeHtml()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 4,
+      "community_name": "favorites.js",
       "file_type": "code",
-      "norm_label": "@syln/sdk",
-      "source_file": "package.json",
-      "source_location": "L23"
-    },
-    {
-      "id": "package_description",
-      "label": "description",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "description",
-      "source_file": "package.json",
-      "source_location": "L4"
-    },
-    {
-      "id": "package_engines",
-      "label": "engines",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "engines",
-      "source_file": "package.json",
-      "source_location": "L19"
-    },
-    {
-      "id": "package_engines_node",
-      "label": "node",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "node",
-      "source_file": "package.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "package_keywords",
-      "label": "keywords",
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "keywords",
-      "source_file": "package.json",
+      "norm_label": "escapehtml()",
+      "source_file": "public/favorites.js",
       "source_location": "L11"
     },
     {
-      "id": "package_license",
-      "label": "license",
+      "id": "public_favorites_favoritecard",
+      "label": "favoriteCard()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 4,
+      "community_name": "favorites.js",
       "file_type": "code",
-      "norm_label": "license",
-      "source_file": "package.json",
+      "norm_label": "favoritecard()",
+      "source_file": "public/favorites.js",
+      "source_location": "L33"
+    },
+    {
+      "id": "public_favorites_favoritekey",
+      "label": "favoriteKey()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "favorites.js",
+      "file_type": "code",
+      "norm_label": "favoritekey()",
+      "source_file": "public/favorites.js",
+      "source_location": "L24"
+    },
+    {
+      "id": "public_favorites_loadfavorites",
+      "label": "loadFavorites()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "favorites.js",
+      "file_type": "code",
+      "norm_label": "loadfavorites()",
+      "source_file": "public/favorites.js",
       "source_location": "L17"
     },
     {
-      "id": "package_main",
-      "label": "main",
+      "id": "public_favorites_removefavorite",
+      "label": "removeFavorite()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 4,
+      "community_name": "favorites.js",
       "file_type": "code",
-      "norm_label": "main",
-      "source_file": "package.json",
-      "source_location": "L5"
+      "norm_label": "removefavorite()",
+      "source_file": "public/favorites.js",
+      "source_location": "L55"
     },
     {
-      "id": "package_name",
-      "label": "name",
+      "id": "public_favorites_render",
+      "label": "render()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 4,
+      "community_name": "favorites.js",
       "file_type": "code",
-      "norm_label": "name",
-      "source_file": "package.json",
-      "source_location": "L2"
+      "norm_label": "render()",
+      "source_file": "public/favorites.js",
+      "source_location": "L62"
     },
     {
-      "id": "package_scripts",
-      "label": "scripts",
+      "id": "public_favorites_showtoast",
+      "label": "showToast()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 4,
+      "community_name": "favorites.js",
       "file_type": "code",
-      "norm_label": "scripts",
-      "source_file": "package.json",
-      "source_location": "L6"
+      "norm_label": "showtoast()",
+      "source_file": "public/favorites.js",
+      "source_location": "L26"
     },
     {
-      "id": "package_scripts_dev",
-      "label": "dev",
+      "id": "public_app_detailsmarkup",
+      "label": "detailsMarkup()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 6,
+      "community_name": "toggleFavorite",
       "file_type": "code",
-      "norm_label": "dev",
-      "source_file": "package.json",
-      "source_location": "L7"
+      "norm_label": "detailsmarkup()",
+      "source_file": "public/app.js",
+      "source_location": "L199"
     },
     {
-      "id": "package_scripts_start",
-      "label": "start",
+      "id": "public_app_escapehtml",
+      "label": "escapeHtml()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 6,
+      "community_name": "toggleFavorite",
       "file_type": "code",
-      "norm_label": "start",
-      "source_file": "package.json",
-      "source_location": "L8"
+      "norm_label": "escapehtml()",
+      "source_file": "public/app.js",
+      "source_location": "L24"
     },
     {
-      "id": "package_scripts_test",
-      "label": "test",
+      "id": "public_app_favoritebuttontext",
+      "label": "favoriteButtonText()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 6,
+      "community_name": "toggleFavorite",
       "file_type": "code",
-      "norm_label": "test",
-      "source_file": "package.json",
-      "source_location": "L9"
+      "norm_label": "favoritebuttontext()",
+      "source_file": "public/app.js",
+      "source_location": "L59"
     },
     {
-      "id": "package_type",
-      "label": "type",
+      "id": "public_app_favoritekey",
+      "label": "favoriteKey()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 6,
+      "community_name": "toggleFavorite",
       "file_type": "code",
-      "norm_label": "type",
-      "source_file": "package.json",
-      "source_location": "L18"
+      "norm_label": "favoritekey()",
+      "source_file": "public/app.js",
+      "source_location": "L37"
     },
     {
-      "id": "package_version",
-      "label": "version",
+      "id": "public_app_isfavorite",
+      "label": "isFavorite()",
+      "_callable": true,
       "_origin": "ast",
-      "community": 0,
+      "community": 6,
+      "community_name": "toggleFavorite",
       "file_type": "code",
-      "norm_label": "version",
-      "source_file": "package.json",
-      "source_location": "L3"
+      "norm_label": "isfavorite()",
+      "source_file": "public/app.js",
+      "source_location": "L38"
+    },
+    {
+      "id": "public_app_opendetails",
+      "label": "openDetails()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "toggleFavorite",
+      "file_type": "code",
+      "norm_label": "opendetails()",
+      "source_file": "public/app.js",
+      "source_location": "L245"
+    },
+    {
+      "id": "public_app_titlecard",
+      "label": "titleCard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "toggleFavorite",
+      "file_type": "code",
+      "norm_label": "titlecard()",
+      "source_file": "public/app.js",
+      "source_location": "L110"
+    },
+    {
+      "id": "public_app_togglefavorite",
+      "label": "toggleFavorite()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "toggleFavorite",
+      "file_type": "code",
+      "norm_label": "togglefavorite()",
+      "source_file": "public/app.js",
+      "source_location": "L63"
+    },
+    {
+      "id": "public_app_loadcatalog",
+      "label": "loadCatalog()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "loadCatalog",
+      "file_type": "code",
+      "norm_label": "loadcatalog()",
+      "source_file": "public/app.js",
+      "source_location": "L145"
+    },
+    {
+      "id": "public_app_renderskeletons",
+      "label": "renderSkeletons()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "loadCatalog",
+      "file_type": "code",
+      "norm_label": "renderskeletons()",
+      "source_file": "public/app.js",
+      "source_location": "L95"
+    },
+    {
+      "id": "public_app_showstatus",
+      "label": "showStatus()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "loadCatalog",
+      "file_type": "code",
+      "norm_label": "showstatus()",
+      "source_file": "public/app.js",
+      "source_location": "L102"
+    },
+    {
+      "id": "public_app_updatepagination",
+      "label": "updatePagination()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "loadCatalog",
+      "file_type": "code",
+      "norm_label": "updatepagination()",
+      "source_file": "public/app.js",
+      "source_location": "L138"
+    },
+    {
+      "id": "public_app_downloadepisode",
+      "label": "downloadEpisode()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "wireDetailActions",
+      "file_type": "code",
+      "norm_label": "downloadepisode()",
+      "source_file": "public/app.js",
+      "source_location": "L258"
+    },
+    {
+      "id": "public_app_showtoast",
+      "label": "showToast()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "wireDetailActions",
+      "file_type": "code",
+      "norm_label": "showtoast()",
+      "source_file": "public/app.js",
+      "source_location": "L47"
+    },
+    {
+      "id": "public_app_wiredetailactions",
+      "label": "wireDetailActions()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "wireDetailActions",
+      "file_type": "code",
+      "norm_label": "wiredetailactions()",
+      "source_file": "public/app.js",
+      "source_location": "L234"
+    },
+    {
+      "id": "public_app_persistfavorites",
+      "label": "persistFavorites()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "persistFavorites",
+      "file_type": "code",
+      "norm_label": "persistfavorites()",
+      "source_file": "public/app.js",
+      "source_location": "L54"
+    },
+    {
+      "id": "public_app_renderfavorites",
+      "label": "renderFavorites()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "persistFavorites",
+      "file_type": "code",
+      "norm_label": "renderfavorites()",
+      "source_file": "public/app.js",
+      "source_location": "L133"
     },
     {
       "id": "server",
       "label": "server.js",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "server.js",
       "source_file": "server.js",
@@ -573,7 +703,8 @@
       "id": "server_fs",
       "label": "fs",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "fs",
       "source_file": "server.js",
@@ -583,7 +714,8 @@
       "id": "server_http",
       "label": "http",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "http",
       "source_file": "server.js",
@@ -593,47 +725,283 @@
       "id": "server_mime_types",
       "label": "MIME_TYPES",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "mime_types",
       "source_file": "server.js",
-      "source_location": "L8"
+      "source_location": "L12"
+    },
+    {
+      "id": "server_os",
+      "label": "os",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.js",
+      "file_type": "code",
+      "norm_label": "os",
+      "source_file": "server.js",
+      "source_location": "L3"
     },
     {
       "id": "server_path",
       "label": "path",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "path",
       "source_file": "server.js",
-      "source_location": "L3"
+      "source_location": "L4"
+    },
+    {
+      "id": "server_pipeline",
+      "label": "{ pipeline }",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.js",
+      "file_type": "code",
+      "norm_label": "{ pipeline }",
+      "source_file": "server.js",
+      "source_location": "L7"
     },
     {
       "id": "server_public_dir",
       "label": "PUBLIC_DIR",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "public_dir",
       "source_file": "server.js",
+      "source_location": "L10"
+    },
+    {
+      "id": "server_readable",
+      "label": "{ Readable }",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.js",
+      "file_type": "code",
+      "norm_label": "{ readable }",
+      "source_file": "server.js",
       "source_location": "L6"
+    },
+    {
+      "id": "server_spawn",
+      "label": "{ spawn }",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "server.js",
+      "file_type": "code",
+      "norm_label": "{ spawn }",
+      "source_file": "server.js",
+      "source_location": "L5"
     },
     {
       "id": "server_syln_sylnerror",
       "label": "{ Syln, SylnError }",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
+      "community_name": "server.js",
       "file_type": "code",
       "norm_label": "{ syln, sylnerror }",
       "source_file": "server.js",
+      "source_location": "L8"
+    },
+    {
+      "id": "package",
+      "label": "package.json",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "package.json",
+      "source_file": "package.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "package_author",
+      "label": "author",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "author",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "package_dependencies",
+      "label": "dependencies",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "dependencies",
+      "source_file": "package.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "package_dependencies_syln_sdk",
+      "label": "@syln/sdk",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@syln/sdk",
+      "source_file": "package.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "package_description",
+      "label": "description",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "description",
+      "source_file": "package.json",
       "source_location": "L4"
+    },
+    {
+      "id": "package_engines",
+      "label": "engines",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "engines",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "package_engines_node",
+      "label": "node",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "node",
+      "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "package_keywords",
+      "label": "keywords",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "keywords",
+      "source_file": "package.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "package_license",
+      "label": "license",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "license",
+      "source_file": "package.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "package_main",
+      "label": "main",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "main",
+      "source_file": "package.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "package_name",
+      "label": "name",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "name",
+      "source_file": "package.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "scripts",
+      "source_file": "package.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "dev",
+      "source_file": "package.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "package_scripts_start",
+      "label": "start",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "start",
+      "source_file": "package.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "package_scripts_test",
+      "label": "test",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "test",
+      "source_file": "package.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "package_type",
+      "label": "type",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "type",
+      "source_file": "package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "package_version",
+      "label": "version",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "version",
+      "source_file": "package.json",
+      "source_location": "L3"
     },
     {
       "id": "test_server_test",
       "label": "server.test.js",
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "server.test.js",
       "source_file": "test/server.test.js",
@@ -644,6 +1012,7 @@
       "label": "assert",
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "assert",
       "source_file": "test/server.test.js",
@@ -654,56 +1023,62 @@
       "label": "{ createHandler }",
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "{ createhandler }",
       "source_file": "test/server.test.js",
-      "source_location": "L4"
+      "source_location": "L5"
+    },
+    {
+      "id": "test_server_test_fs",
+      "label": "fs",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "server.test.js",
+      "file_type": "code",
+      "norm_label": "fs",
+      "source_file": "test/server.test.js",
+      "source_location": "L3"
     },
     {
       "id": "test_server_test_mocktitle",
       "label": "mockTitle",
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "mocktitle",
       "source_file": "test/server.test.js",
-      "source_location": "L6"
+      "source_location": "L7"
     },
     {
       "id": "test_server_test_readable_writable",
       "label": "{ Readable, Writable }",
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "{ readable, writable }",
       "source_file": "test/server.test.js",
-      "source_location": "L3"
+      "source_location": "L4"
     },
     {
       "id": "test_server_test_test",
       "label": "test",
       "_origin": "ast",
       "community": 2,
+      "community_name": "server.test.js",
       "file_type": "code",
       "norm_label": "test",
       "source_file": "test/server.test.js",
       "source_location": "L1"
     },
     {
-      "id": "ref_syln_sdk",
-      "label": "@syln/sdk",
-      "_origin": "ast",
-      "community": 3,
-      "file_type": "concept",
-      "norm_label": "@syln/sdk",
-      "source_file": "package.json",
-      "source_location": "L23"
-    },
-    {
       "id": "public_app",
       "label": "app.js",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
       "norm_label": "app.js",
       "source_file": "public/app.js",
@@ -713,21 +1088,67 @@
       "id": "public_app_elements",
       "label": "elements",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
       "norm_label": "elements",
       "source_file": "public/app.js",
-      "source_location": "L15"
+      "source_location": "L9"
+    },
+    {
+      "id": "public_app_requestedtitle",
+      "label": "requestedTitle",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "app.js",
+      "file_type": "code",
+      "norm_label": "requestedtitle",
+      "source_file": "public/app.js",
+      "source_location": "L378"
     },
     {
       "id": "public_app_state",
       "label": "state",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
+      "community_name": "app.js",
       "file_type": "code",
       "norm_label": "state",
       "source_file": "public/app.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "public_favorites",
+      "label": "favorites.js",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "favorites.js",
+      "file_type": "code",
+      "norm_label": "favorites.js",
+      "source_file": "public/favorites.js",
       "source_location": "L1"
+    },
+    {
+      "id": "public_favorites_elements",
+      "label": "elements",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "favorites.js",
+      "file_type": "code",
+      "norm_label": "elements",
+      "source_file": "public/favorites.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "ref_syln_sdk",
+      "label": "@syln/sdk",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
+      "file_type": "concept",
+      "norm_label": "@syln/sdk",
+      "source_file": "package.json",
+      "source_location": "L23"
     },
     {
       "id": "public_index_ruang_dracin_page",
@@ -735,7 +1156,8 @@
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
-      "community": 3,
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
       "contributor": null,
       "file_type": "code",
       "norm_label": "ruang dracin page",
@@ -749,7 +1171,8 @@
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
-      "community": 3,
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "catalog discovery interface",
@@ -763,7 +1186,8 @@
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
-      "community": 3,
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "syln api",
@@ -777,7 +1201,8 @@
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
-      "community": 3,
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "adaptive video playback interface",
@@ -791,7 +1216,8 @@
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
-      "community": 3,
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "drama catalog and playback features",
@@ -805,7 +1231,8 @@
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
-      "community": 3,
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "web application security hardening",
@@ -819,7 +1246,8 @@
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
-      "community": 3,
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
       "contributor": null,
       "file_type": "document",
       "norm_label": "ruang dracin web application",
@@ -833,7 +1261,8 @@
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
-      "community": 3,
+      "community": 5,
+      "community_name": "Ruang Dracin Page",
       "contributor": null,
       "file_type": "rationale",
       "norm_label": "server-side token isolation",
@@ -853,7 +1282,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L176",
+      "source_location": "L200",
       "weight": 1.0
     },
     {
@@ -865,7 +1294,79 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L184",
+      "source_location": "L211",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_detailsmarkup",
+      "target": "public_app_favoritebuttontext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L223",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_detailsmarkup",
+      "target": "public_app_favoritekey",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L223",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_detailsmarkup",
+      "target": "public_app_isfavorite",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L223",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_downloadepisode",
+      "target": "public_app_showtoast",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L268",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_favoritebuttontext",
+      "target": "public_app_isfavorite",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_isfavorite",
+      "target": "public_app_favoritekey",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -877,7 +1378,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L112",
+      "source_location": "L148",
       "weight": 1.0
     },
     {
@@ -889,7 +1390,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L122",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
@@ -901,7 +1402,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L131",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -913,7 +1414,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L133",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -925,7 +1426,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L159",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -937,7 +1438,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L142",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
@@ -949,7 +1450,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L211",
+      "source_location": "L251",
       "weight": 1.0
     },
     {
@@ -961,19 +1462,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L216",
+      "source_location": "L253",
       "weight": 1.0
     },
     {
       "source": "public_app_opendetails",
-      "target": "public_app_openplayer",
+      "target": "public_app_wiredetailactions",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L220",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
@@ -985,7 +1486,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L224",
+      "source_location": "L255",
       "weight": 1.0
     },
     {
@@ -997,7 +1498,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L290",
+      "source_location": "L329",
       "weight": 1.0
     },
     {
@@ -1009,19 +1510,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L297",
+      "source_location": "L333",
       "weight": 1.0
     },
     {
-      "source": "public_app_requestplayback",
-      "target": "public_app_setplayerloading",
+      "source": "public_app_persistfavorites",
+      "target": "public_app_renderfavorites",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L248",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -1033,7 +1534,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L250",
+      "source_location": "L299",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_requestplayback",
+      "target": "public_app_enabledefaultsubtitle",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L317",
       "weight": 1.0
     },
     {
@@ -1045,7 +1558,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L78",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_titlecard",
+      "target": "public_app_isfavorite",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -1057,7 +1582,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L88",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_titlecard",
+      "target": "public_app_favoritekey",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L123",
       "weight": 1.0
     },
     {
@@ -1069,7 +1606,223 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "public/app.js",
-      "source_location": "L98",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_titlecard",
+      "target": "public_app_togglefavorite",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_togglefavorite",
+      "target": "public_app_favoritekey",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_togglefavorite",
+      "target": "public_app_showtoast",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_togglefavorite",
+      "target": "public_app_favoritesnapshot",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_togglefavorite",
+      "target": "public_app_persistfavorites",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_togglefavorite",
+      "target": "public_app_isfavorite",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_togglefavorite",
+      "target": "public_app_favoritebuttontext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_wiredetailactions",
+      "target": "public_app_openplayer",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L235",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_wiredetailactions",
+      "target": "public_app_togglefavorite",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L236",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app_wiredetailactions",
+      "target": "public_app_downloadepisode",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/app.js",
+      "source_location": "L241",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites_favoritecard",
+      "target": "public_favorites_escapehtml",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/favorites.js",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites_favoritecard",
+      "target": "public_favorites_removefavorite",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/favorites.js",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites_removefavorite",
+      "target": "public_favorites_favoritekey",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/favorites.js",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites_removefavorite",
+      "target": "public_favorites_loadfavorites",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/favorites.js",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites_removefavorite",
+      "target": "public_favorites_showtoast",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/favorites.js",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites_removefavorite",
+      "target": "public_favorites_render",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/favorites.js",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites_render",
+      "target": "public_favorites_loadfavorites",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/favorites.js",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites_render",
+      "target": "public_favorites_favoritecard",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "public/favorites.js",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -1081,7 +1834,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L122",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -1093,7 +1846,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L128",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
@@ -1105,7 +1858,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L140",
+      "source_location": "L197",
       "weight": 1.0
     },
     {
@@ -1117,7 +1870,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L149",
+      "source_location": "L206",
       "weight": 1.0
     },
     {
@@ -1129,7 +1882,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L155",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
@@ -1141,7 +1894,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L157",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "server_createhandler",
+      "target": "server_safedownloadname",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "server.js",
+      "source_location": "L247",
+      "weight": 1.0
+    },
+    {
+      "source": "server_createhandler",
+      "target": "server_contentdisposition",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "server.js",
+      "source_location": "L250",
       "weight": 1.0
     },
     {
@@ -1153,7 +1930,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L219",
+      "source_location": "L357",
+      "weight": 1.0
+    },
+    {
+      "source": "server_createserver",
+      "target": "server_parseboolean",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "server.js",
+      "source_location": "L366",
       "weight": 1.0
     },
     {
@@ -1165,7 +1954,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L228",
+      "source_location": "L367",
       "weight": 1.0
     },
     {
@@ -1177,7 +1966,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "server.js",
-      "source_location": "L104",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -1189,7 +1978,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "test/server.test.js",
-      "source_location": "L66",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -1201,7 +1990,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "test/server.test.js",
-      "source_location": "L71",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -1213,7 +2002,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "test/server.test.js",
-      "source_location": "L71",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -1225,7 +2014,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "test/server.test.js",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -1237,7 +2026,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "test/server.test.js",
-      "source_location": "L57",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -1261,7 +2050,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "test/server.test.js",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -1273,7 +2062,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "server.js",
-      "source_location": "L4",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -1285,7 +2074,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "test/server.test.js",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -1466,18 +2255,7 @@
     },
     {
       "source": "public_app",
-      "target": "public_app_state",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "public_app",
-      "target": "public_app_updatepagination",
+      "target": "public_app_showstatus",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1488,24 +2266,46 @@
     },
     {
       "source": "public_app",
+      "target": "public_app_titlecard",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_renderfavorites",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L133",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_updatepagination",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
       "target": "public_app_loadplatforms",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "public/app.js",
-      "source_location": "L140",
-      "weight": 1.0
-    },
-    {
-      "source": "public_app",
-      "target": "public_app_elements",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L15",
+      "source_location": "L172",
       "weight": 1.0
     },
     {
@@ -1516,7 +2316,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "public/app.js",
-      "source_location": "L156",
+      "source_location": "L183",
       "weight": 1.0
     },
     {
@@ -1527,73 +2327,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "public/app.js",
-      "source_location": "L175",
+      "source_location": "L199",
       "weight": 1.0
     },
     {
       "source": "public_app",
-      "target": "public_app_opendetails",
+      "target": "public_app_wiredetailactions",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "public/app.js",
-      "source_location": "L204",
-      "weight": 1.0
-    },
-    {
-      "source": "public_app",
-      "target": "public_app_setplayerloading",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L228",
-      "weight": 1.0
-    },
-    {
-      "source": "public_app",
-      "target": "public_app_configurequality",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L232",
-      "weight": 1.0
-    },
-    {
-      "source": "public_app",
-      "target": "public_app_requestplayback",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L243",
-      "weight": 1.0
-    },
-    {
-      "source": "public_app",
-      "target": "public_app_openplayer",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L287",
-      "weight": 1.0
-    },
-    {
-      "source": "public_app",
-      "target": "public_app_closedialog",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L300",
+      "source_location": "L234",
       "weight": 1.0
     },
     {
@@ -1604,7 +2349,194 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "public/app.js",
-      "source_location": "L40",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_opendetails",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L245",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_downloadepisode",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L258",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_configurequality",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L272",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_enabledefaultsubtitle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L281",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_requestplayback",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L292",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_state",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_loadstoredfavorites",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_openplayer",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L326",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_closedialog",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L336",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_favoritekey",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_requestedtitle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L378",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_isfavorite",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_favoritesnapshot",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_showtoast",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_persistfavorites",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_favoritebuttontext",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_togglefavorite",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -1615,7 +2547,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "public/app.js",
-      "source_location": "L46",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "public_app",
+      "target": "public_app_elements",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/app.js",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -1626,7 +2569,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "public/app.js",
-      "source_location": "L60",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -1637,29 +2580,84 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "public/app.js",
-      "source_location": "L67",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
-      "source": "public_app",
-      "target": "public_app_showstatus",
+      "source": "public_favorites",
+      "target": "public_favorites_escapehtml",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L76",
+      "source_file": "public/favorites.js",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
-      "source": "public_app",
-      "target": "public_app_titlecard",
+      "source": "public_favorites",
+      "target": "public_favorites_loadfavorites",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "public/app.js",
-      "source_location": "L84",
+      "source_file": "public/favorites.js",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites",
+      "target": "public_favorites_favoritekey",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favorites.js",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites",
+      "target": "public_favorites_showtoast",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favorites.js",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites",
+      "target": "public_favorites_elements",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favorites.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites",
+      "target": "public_favorites_favoritecard",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favorites.js",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites",
+      "target": "public_favorites_removefavorite",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/favorites.js",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -1675,7 +2673,18 @@
     },
     {
       "source": "server",
-      "target": "server_querycatalogparams",
+      "target": "server_public_dir",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "server.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_contentdisposition",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1686,13 +2695,46 @@
     },
     {
       "source": "server",
-      "target": "server_setsecurityheaders",
+      "target": "server_remuxmp4",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L18",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_mime_types",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "server.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_readjson",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "server.js",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_querycatalogparams",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "server.js",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
@@ -1708,18 +2750,18 @@
     },
     {
       "source": "server",
-      "target": "server_sendjson",
+      "target": "server_setsecurityheaders",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L28",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
       "source": "server",
-      "target": "server_path",
+      "target": "server_os",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1730,18 +2772,18 @@
     },
     {
       "source": "server",
-      "target": "server_publicerror",
+      "target": "server_sendjson",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L39",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
       "source": "server",
-      "target": "server_syln_sylnerror",
+      "target": "server_path",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1752,7 +2794,29 @@
     },
     {
       "source": "server",
-      "target": "server_public_dir",
+      "target": "server_publicerror",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "server.js",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_spawn",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "server.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_readable",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1769,23 +2833,34 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L64",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
       "source": "server",
-      "target": "server_requiretitleid",
+      "target": "server_pipeline",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L72",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
       "source": "server",
-      "target": "server_mime_types",
+      "target": "server_parseboolean",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "server.js",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_syln_sylnerror",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1796,13 +2871,24 @@
     },
     {
       "source": "server",
-      "target": "server_readjson",
+      "target": "server_requiretitleid",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "server.js",
-      "source_location": "L81",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "server",
+      "target": "server_safedownloadname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "server.js",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -1824,7 +2910,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -1846,12 +2932,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
       "source": "test_server_test",
-      "target": "test_server_test_readable_writable",
+      "target": "test_server_test_fs",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1868,12 +2954,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
       "source": "test_server_test",
-      "target": "test_server_test_createhandler",
+      "target": "test_server_test_readable_writable",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1884,13 +2970,13 @@
     },
     {
       "source": "test_server_test",
-      "target": "test_server_test_mocktitle",
+      "target": "test_server_test_createhandler",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -1901,7 +2987,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L62",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "test_server_test",
+      "target": "test_server_test_mocktitle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test/server.test.js",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -1912,7 +3009,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -1923,7 +3020,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -1934,7 +3031,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -1945,7 +3042,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L51",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -1956,7 +3053,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "test/server.test.js",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -1968,7 +3065,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "public/app.js",
-      "source_location": "L372",
+      "source_location": "L382",
       "weight": 1.0
     },
     {
@@ -1980,7 +3077,19 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "public/app.js",
-      "source_location": "L81",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "public_favorites",
+      "target": "public_favorites_render",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "public/favorites.js",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -1992,7 +3101,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "server.js",
-      "source_location": "L239",
+      "source_location": "L379",
       "weight": 1.0
     },
     {
@@ -2004,7 +3113,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "server.js",
-      "source_location": "L239",
+      "source_location": "L379",
       "weight": 1.0
     },
     {
@@ -2129,5 +3238,6 @@
       "weight": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "39410d24d74b6f8e61b2b51d9075581106cc9808"
 }
